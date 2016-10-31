@@ -1,59 +1,123 @@
-<!DOCTYPE HTML>
 <html>
-	<head>
-		<title>MANPRO 2015 - TEKKOM UI</title>
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<script src="js/bootstrap.min.js"></script>
-	</head>
-	<body>
-		<div class="container">
-			<div class="page-header">
-				<h1>Attendance System with QR Codes for Network Laboratory</h1>
-			</div>
-			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-8">
-					<h2>Deskripsi Proyek dan Pencapaian Sekarang</h2>
-					<hr />
-					<p>
-						Ini adalah proyek mata kuliah Manajemen Proyek 2015, Teknik Komputer UI. Pengembangan yang sedang dilakukan adalah pembuatan <i>back-end system</i> yang berisikan:
-						<ol>
-							<li>Halaman Login <span class="glyphicon glyphicon-ok"></span></li>
-							<li>Halaman Manajemen Pengguna</li>
-							<ol type="i">
-								<li>Penambahan Pengguna</li>
-								<li>Pengubahan Pengguna</li>
-								<li>Pengurangan Pengguna</li>
-								<li>Pengubahan Role Pengguna</li>
-							</ol>
-							<li>Halaman Manajemen Jadwal</li>
-							<ol type="i">
-								<li>Penambahan Jadwal</li>
-								<li>Pengubahan Jadwal</li>
-								<li>Pengurangan Jadwal</li>
-								<li>Monitoring Kehadiran</li>
-							</ol>
-							<li>Halaman Manajemen Pekerjaan Tambahan</li>
-							<ol type="i">
-								<li>Penambahan Pekerjaan Tambahan</li>
-								<li>Pengubahan Pekerjaan Tambahan</li>
-								<li>Pengurangan Pekerjaan Tambahan</li>
-							</ol>
-						</ol> 
-					</p>
-					<h2>Rencana Kedepan</h2>
-					<hr />
-					<p>
-						Setelah menyelesaikan <i>back-end system</i>, akan dikerjakan <i>front-end system</i> yang memungkinkan pengguna untuk melakukan absensi. Fitur yang akan dibuat adalah:
-						<ol>
-							<li>Halaman Login</li>
-							<li>Generator QR Code</li>
-							<li>Generator Dokumen Detail Kerja Hari ini</li>
-						</ol>
-					</p>
-				</div>
-				<div class="col-md-2"></div>
-			</div>
-		</div>
-	</body>
+    <head>
+        <title>JQuery Challenge</title>
+        <meta charset="UTF-8" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="bio" align="center">
+            <img src="huehuebox.jpg" id="profpic"/>
+            <h1>
+                Halo, saya Akbar!
+            </h1>
+            <p id="bio-text">
+                Saya adalah seorang <b><i>web development enthusiast</i></b>. 
+                <br> 
+                Saya juga memiliki minat dibidang <b><i>Software Defined Networking</i></b> dan <b><i>Internet of Things</i></b>. 
+                <br> 
+                Saat ini saya menjadi <b>Junior Web Development Instructor</b> di <b><a href="https://hacktiv8.com/" target="_blank">Hacktiv8</a></b>.  
+            </p>
+            <div class="pendidikan" align="left">
+                <h2>
+                    Pendidikan <small><a href="#">[selengkapnya]</a></small>
+                </h2>
+                <hr/>
+                <p>
+                    <ul class="list-pendidikan">
+                        <li>
+                            Teknik Komputer Universitas Indonesia, Depok
+                        </li>
+                        <li>
+                            SMAN Sumatera Selatan, Palembang
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <div class="pengalaman" align="left">
+                <h2>
+                    Pengalaman <small><a href="#">[selengkapnya]</a></small>
+                </h2>
+                <hr/>
+                <p>
+                    <ul class="list-pengalaman">
+                        <li class="item-pengalaman">
+                            Asisten Laboratorium Jaringan, Teknik Elektro Universitas Indonesia <a href="#">[detail]</a>
+                            <br>
+                            <blockquote>
+                                Membantu dosen pengampu untuk mempersiapkan, melaksanakan dan mengevaluasi kegiatan praktikum pada beberapa mata kuliah seperti:
+                                <ol>
+                                    <li>Dasar Jaringan Komputer</li>
+                                    <li>Desain &amp; Manajemen Jaringan</li>
+                                    <li>Pemrograman Berorientasi Objek</li>
+                                    <li>Sistem Basis Data</li>
+                                    <li>Keamanan Jaringan Komputer</li>
+                                </ol>
+                            </blockquote>
+                        </li>
+                        <li class="item-pengalaman">
+                            Web Developer Intern, PT. GO-JEK Indonesia <a href="#">[detail]</a>
+                            <br>
+                            <blockquote>
+                                Mendesain dan mengimplementasi sistem informasi internal untuk pendataan <i>Talent Journey</i> pada servis Go-Clean, Go-Glam, Go-Massage, dll menggunakan CodeIgniter, Bootstrap, &amp; JQuery.
+                            </blockquote>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <div class="kontak" align="left">
+                <h2>
+                    Kontak &amp; Social Media <small><a href="#">[selengkapnya]</a></small>
+                </h2>
+                <hr/>
+                <div class="list-kontak">
+                    <table>
+                        <tr>
+                            <td class="facebook">
+                                <div class="overlay">
+                                    <h2>
+                                        <a href="https://www.facebook.com/akbarsahata.sakapertana" target="_blank">
+                                        Let's be friends!
+                                        </a>
+                                    </h2>
+                                </div>
+                                <img src="logo-fb.png" class="logo"/>  
+                            </td>
+                            <td class="linkedin">
+                                <div class="overlay">
+                                    <h2>
+                                        <a href="https://id.linkedin.com/in/akbarsahata" target="_blank">
+                                        Let's connect!
+                                        </a>
+                                    </h2>
+                                </div>
+                                <img src="logo-link.png" class="logo linkedin" id="linkedin"/>
+                            </td>
+                            <td class="github">
+                                <div class="overlay">
+                                    <h2>
+                                        <a href="https://github.com/sahatatekkom" target="_blank">
+                                        Let's collaborate!
+                                        </a>
+                                    </h2>
+                                </div>
+                                <img src="logo-git.png" class="logo github"/>
+                            </td>
+                            <td class="twitter">
+                                <div class="overlay">
+                                    <h2>
+                                        <a href="https://twitter.com/AkbarSahata" target="_blank">
+                                        Follow me!
+                                        </a></h2>
+                                </div>
+                                <img src="logo-tw.png" class="logo twitter"/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
