@@ -41,12 +41,12 @@ blockquote {
     display: none;
 }
 .logo {
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 150px;
+    max-width: 150px;
 }
 #linkedin {
-    max-height: 175px;
-    max-width: 175px;
+    max-height: 135px;
+    max-width: 135px;
 }
 .overlay {
     height:100%;
