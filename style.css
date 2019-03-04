@@ -15,13 +15,29 @@ html {
   flex-direction: row;
   min-width: 100vw;
 }
+@media only screen and (max-width: 600px) {
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+    min-width: 100vw;
+  }
+  .photo {
+    max-width: 100vw;
+    min-width: 100vw;
+  }
+  .content {
+    max-width: 100vw;
+    min-width: 100vw;
+  }
+}
 .photo {
   background-image: url(background-profile.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-  max-width: 100vh;
+  min-width: 50vw;
+  max-width: 50vw;
 }
 .content {
   display: flex;
@@ -32,6 +48,8 @@ html {
   min-height: 100vh;
   max-width: 100vh;
   color: #40514e;
+  min-width: 50vw;
+  max-width: 50vw;
 }
 .content h1 {
   font-size: 60px;
@@ -42,10 +60,10 @@ html {
   font-family: 'Zilla Slab';
 }
 .content h5 {
-  margin-top: 15px;
+  margin-top: 50px;
   margin-bottom: 15px;
   font-size: 20px;
-  font-family: 'Zilla Slab'
+  font-family: 'Zilla Slab';
 }
 .content h5 span {
   font-family: 'Zilla Slab Highlight';
@@ -60,11 +78,16 @@ a.title {
   text-decoration: none;
   color: #40514e;
 }
-ul {
-  list-style: none;
+div.footer {
   position: absolute;
   bottom: 10px;
+  min-width: 50vw;
   max-width: 50vw;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
 }
 li {
   font-family: 'Zilla Slab';
