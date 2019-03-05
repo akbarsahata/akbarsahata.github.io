@@ -4,7 +4,8 @@
   "description": "OWAOWAWEO",
   "main": "script.js",
   "scripts": {
-    "uglify": "npx uglify-js script.js -o script.min.js"
+    "uglify": "npx uglify-js script.js -o script.min.js",
+    "obfuscate": "npx javascript-obfuscator script.min.js --output output.js"
   },
   "repository": {
     "type": "git",
