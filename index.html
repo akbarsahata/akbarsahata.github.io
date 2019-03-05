@@ -15,18 +15,61 @@
           <h1><a class="title" href="https://iam.akbarsahata.id">iam.AkbarSahata.id</a></h1>
           <hr class="line">
           <h3>The 2LD is my name. <br>And I am a software engineer, <i>that's it</i>.</h3>
-          <h5>Visited <span>980</span> times</h5>
+          <h5>Visited <span id="views">0</span> times</h5>
         </div>
         <div class="photo">
         </div>
         <div class="footer">
           <ul>
-            <li>GitHub</li>
-            <li>LinkedIn</li>
-            <li>Medium</li>
-            <li>YouTube</li>
+            <li>
+              <a href="https://github.com/akbarsahata" target="_blank" class="links">GitHub</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/akbarsahata/" target="_blank" class="links">LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://medium.com/@akbarsahata" target="_blank" class="links">Medium</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/akbarsahata/" target="_blank" class="links">Instagram</a>
+            </li>
           </ul>
         </div>
       </div>
     </body>
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script>
+      function updateViews (views) {
+        var spanViews = document.getElementById('views')
+
+        spanViews.innerHTML = views
+      }
+
+      function addViews (ref) {
+        ref.once('value')
+          .then(function (snapshot) {
+            var value = snapshot.val()
+            ++value
+            ref.set(value)
+          })
+      }
+
+      var config = {
+        apiKey: 'AIzaSyBqd3FrXvJXopBroZMuLjxx1uRzqKam3DQ',
+        authDomain: 'iam-akbarsahata-id.firebaseapp.com',
+        databaseURL: 'https://iam-akbarsahata-id.firebaseio.com/',
+        projectId: 'iam-akbarsahata-id',
+      }
+      firebase.initializeApp(config)
+
+      var views = firebase.database().ref('views')
+
+      views.on('value', function (snapshot) {
+        updateViews(snapshot.val())
+      })
+
+      window.onload = function () {
+        addViews(views)
+      }
+    </script>
 </html>
