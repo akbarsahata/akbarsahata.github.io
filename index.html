@@ -11,8 +11,11 @@
       <meta property="fb:app_id" content="397605777484093" />
       <link href="style.css" rel="stylesheet" type="text/css" />
       <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-      <link rel="icon" href="/favicon.ico" type="image/x-icon">   
-    </head>ß
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">  
+      <noscript>
+        Either your browser deactivate JavaScript or does not support it!
+      </noscript> 
+    </head>
     <body>
       <div class="main">
         <div class="content">
@@ -68,6 +71,13 @@
     <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-database.js"></script>
     <script src="output.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('/sw.js')
+        })
+      }
+    </script>
     <script>
       window.fbAsyncInit = function() {
         FB.init({
