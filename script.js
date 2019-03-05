@@ -1,37 +1,32 @@
-$(document).ready(function(){
-  $('.pendidikan').on('click', 'small', function(event){
-    event.preventDefault();
-    $('.list-pendidikan').slideToggle();
-  });
-  $('.kontak').on('click', 'small', function(event){
-    event.preventDefault();
-    $('.list-kontak').slideToggle();
-  });
-  $('.pengalaman').on('click', 'small', function(event){
-    event.preventDefault();
-    $('.list-pengalaman').slideToggle();
-  });
-  $('.item-pengalaman').on('click', 'a', function(event){
-    event.preventDefault();
-    console.log('ahai');
-    $(this).parent().find('blockquote').slideToggle();
-  })
+function updateViews (views) {
+  var spanViews = document.getElementById('views')
 
-  $('.facebook').on('mouseenter', logoEnter);
-  $('.facebook').on('mouseleave', logoLeave);
-  $('.twitter').on('mouseenter', logoEnter);
-  $('.twitter').on('mouseleave', logoLeave);
-  $('.github').on('mouseenter', logoEnter);
-  $('.github').on('mouseleave', logoLeave);
-  $('.linkedin').on('mouseenter', logoEnter);
-  $('.linkedin').on('mouseleave', logoLeave);
+  spanViews.innerHTML = views
+}
 
-  function logoEnter(event){
-    $(this).find('.overlay').show('fast');
-    $(this).find('img').hide('fast');
-  }
-  function logoLeave(event){
-    $(this).find('.overlay').hide('fast');
-    $(this).find('img').show('fast');
-  }
-});
+function addViews (ref) {
+  ref.once('value')
+    .then(function (snapshot) {
+      var value = snapshot.val()
+      ++value
+      ref.set(value)
+    })
+}
+
+var config = {
+  apiKey: 'AIzaSyBqd3FrXvJXopBroZMuLjxx1uRzqKam3DQ',
+  authDomain: 'iam-akbarsahata-id.firebaseapp.com',
+  databaseURL: 'https://iam-akbarsahata-id.firebaseio.com/',
+  projectId: 'iam-akbarsahata-id',
+}
+firebase.initializeApp(config)
+
+var views = firebase.database().ref('views')
+
+views.on('value', function (snapshot) {
+  updateViews(snapshot.val())
+})
+
+window.onload = function () {
+  addViews(views)
+}

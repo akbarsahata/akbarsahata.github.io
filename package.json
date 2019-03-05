@@ -1,0 +1,24 @@
+{
+  "name": "akbarsahata.github.io",
+  "version": "1.0.0",
+  "description": "OWAOWAWEO",
+  "main": "script.js",
+  "scripts": {
+    "uglify": "npx uglify-js script.js -o script.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akbarsahata/akbarsahata.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akbarsahata/akbarsahata.github.io/issues"
+  },
+  "homepage": "https://github.com/akbarsahata/akbarsahata.github.io#readme",
+  "devDependencies": {
+    "javascript-obfuscator": "^0.18.1",
+    "uglify-js": "^3.4.9"
+  }
+}
