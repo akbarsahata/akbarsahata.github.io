@@ -5,7 +5,8 @@ if (workbox) {
     '/',
     { url: '/style.css' },
     { url: '/output.js' },
-    { url: '/background-profile.jpeg' }
+    { url: '/background-profile.jpeg' },
+    { url: '/favicon.ico' }
   ])
 
   workbox.routing.registerRoute(
