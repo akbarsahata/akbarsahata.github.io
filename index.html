@@ -5,13 +5,14 @@
       <meta name="viewport" content="width=device-width,initial-scale=1.0">
       <meta property="og:url" content="https://iam.akbarsahata.id" />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content="iam.AkbarSahata.id" />
-      <meta property="og:description" content="And I am a software engineer, that's it." />
+      <meta property="og:title" content="Akbar Sahata's Profile" />
+      <meta property="og:description" content="I am a software engineer, that's it." />
       <meta property="og:image" content="https://iam.akbarsahata.id/background-profile.jpeg" />
+      <meta property="fb:app_id" content="397605777484093" />
       <link href="style.css" rel="stylesheet" type="text/css" />
       <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
       <link rel="icon" href="/favicon.ico" type="image/x-icon">   
-    </head>
+    </head>ß
     <body>
       <div class="main">
         <div class="content">
@@ -25,16 +26,40 @@
         <div class="footer">
           <ul>
             <li>
-              <a href="https://github.com/akbarsahata" target="_blank" class="links">GitHub</a>
+              <a 
+                href="https://github.com/akbarsahata"
+                target="_blank" 
+                class="links"
+                onclick="FB.AppEvents.logEvent('CLICKED_GITHUB')" >
+                GitHub
+              </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/akbarsahata/" target="_blank" class="links">LinkedIn</a>
+              <a
+                href="https://www.linkedin.com/in/akbarsahata/"
+                target="_blank"
+                class="links"
+                onclick="FB.AppEvents.logEvent('CLICKED_LINKEDIN')">
+                LinkedIn
+              </a>
             </li>
             <li>
-              <a href="https://medium.com/@akbarsahata" target="_blank" class="links">Medium</a>
+              <a
+                href="https://medium.com/@akbarsahata"
+                target="_blank"
+                class="links"
+                onclick="FB.AppEvents.logEvent('CLICKED_MEDIUM')">
+                Medium
+              </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/akbarsahata/" target="_blank" class="links">Instagram</a>
+              <a
+                href="https://www.instagram.com/akbarsahata/"
+                target="_blank"
+                class="links"
+                onclick="FB.AppEvents.logEvent('CLICKED_INSTAGRAM')">
+                Instagram
+              </a>
             </li>
           </ul>
         </div>
@@ -43,4 +68,25 @@
     <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-database.js"></script>
     <script src="output.js"></script>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '397605777484093',
+          cookie     : true,
+          xfbml      : true,
+          version    : 'v3.2'
+        });
+          
+        FB.AppEvents.logPageView();   
+          
+      };
+    
+      (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 </html>
