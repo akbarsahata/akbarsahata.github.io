@@ -1,3 +1,5 @@
 node_modules
 script.js
 script.min.js
+package.json
+package-lock.json
