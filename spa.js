@@ -1,3 +1,15 @@
+function adjustJustifyContent () {
+  if (window.location.hash === '#profile') {
+    document.getElementById('app').style.justifyContent = 'flex-start'
+  } else {
+    document.getElementById('app').style.justifyContent = 'center'
+  }
+}
+
+function resetJustifyContent () {
+  document.getElementById('app').style.justifyContent = 'center'
+}
+
 function Route (name, htmlName, defaultRoute) {
   try {
     if (!name || !htmlName) {
@@ -77,9 +89,12 @@ Router.prototype = {
           scope.rootElem.innerHTML = this.responseText
         }
       }
-
       xhttp.onloadstart = function () {
+        resetJustifyContent()
         scope.rootElem.innerHTML = '<h5>loading...</h5>'
+      }
+      xhttp.onload = function () {
+        adjustJustifyContent()
       }
 
       xhttp.open('GET', url, true)
