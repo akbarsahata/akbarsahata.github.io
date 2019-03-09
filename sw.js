@@ -4,10 +4,11 @@ if (workbox) {
   workbox.precaching.precacheAndRoute([
     '/',
     { url: 'views/home.html'},
-    { url: 'views/test.html'},
+    { url: 'views/profile.html'},
     { url: '/style.css' },
     { url: '/script.js' },
     { url: '/background-profile.jpeg' },
+    { url: '/background-profile-mobile.jpeg' },
     { url: '/favicon.ico' }
   ])
 
