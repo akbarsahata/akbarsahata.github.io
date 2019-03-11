@@ -1,5 +1,5 @@
 function adjustJustifyContent () {
-  if (window.location.hash === '#profile') {
+  if (window.location.hash) {
     document.getElementById('app').style.justifyContent = 'flex-start'
   } else {
     document.getElementById('app').style.justifyContent = 'center'
@@ -106,7 +106,9 @@ Router.prototype = {
 function main () {
   new Router([
     new Route('home', 'home.html', true),
-    new Route('profile', 'profile.html')
+    new Route('profile', 'profile.html'),
+    new Route('publication', 'publication.html'),
+    new Route('projects', 'projects.html')
   ])
 }
 main()
