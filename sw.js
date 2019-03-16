@@ -3,12 +3,22 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox
 if (workbox) {
   workbox.precaching.precacheAndRoute([
     '/',
+    { url: 'views/home.html'},
+    { url: 'views/profile.html'},
     { url: '/style.css' },
-    { url: '/output.js' },
+    { url: '/script.js' },
     { url: '/background-profile.jpeg' },
+    { url: '/background-profile-mobile.jpeg' },
     { url: '/favicon.ico' }
   ])
 
+  workbox.routing.registerRoute(
+    /\.html$/,
+    new workbox.strategies.StaleWhileRevalidate({
+      cacheName: 'pages'
+    })
+  )
+  
   workbox.routing.registerRoute(
     /\.(?:js|css)$/,
     new workbox.strategies.StaleWhileRevalidate({
