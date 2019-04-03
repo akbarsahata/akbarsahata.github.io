@@ -6,7 +6,8 @@ if (workbox) {
     { url: 'views/home.html'},
     { url: 'views/profile.html'},
     { url: '/style.css' },
-    { url: '/script.js' },
+    { url: '/script.min.js' },
+    { url: '/spa.min.js' },
     { url: '/background-profile.jpeg' },
     { url: '/background-profile-mobile.jpeg' },
     { url: '/favicon.ico' }

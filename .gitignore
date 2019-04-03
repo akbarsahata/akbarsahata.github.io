@@ -1,9 +1,5 @@
 node_modules
-script.js
-script.min.js
-spa.js
-spa.min.js
 package.json
 package-lock.json
-dist
-.cache
+script.js
+spa.js
