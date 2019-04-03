@@ -5,6 +5,8 @@ if (workbox) {
     '/',
     { url: 'views/home.html'},
     { url: 'views/profile.html'},
+    { url: 'views/projects.html'},
+    { url: 'views/publication.html'},
     { url: '/style.css' },
     { url: '/script.min.js' },
     { url: '/spa.min.js' },
