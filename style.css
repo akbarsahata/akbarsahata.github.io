@@ -31,20 +31,21 @@ p a {
   min-width: 100vw;
 }
 .photo {
-  background-image: url(background-profile.jpeg);
+  background-color: #40514e;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
   min-width: 50vw;
   max-width: 50vw;
-  color: #40514e;
+  color: white;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: flex-end;
   margin: 0;
   padding: 0;
+  content: 'A';
 }
 .content {
   display: flex;
@@ -196,10 +197,12 @@ select option {
     min-width: 100vw;
   }
   .photo {
+    display: none;
     min-width: 100vw;
-    min-height: 40vh;
-    max-height: 40vh;
-    background-image: url(background-profile-mobile.jpeg);
+    min-height: 50vh;
+    max-height: 50vh;
+    margin-top: 10%;
+    background-color: #40514e;
   }
   .photo h5 {
     font-size: 25px;
@@ -214,8 +217,8 @@ select option {
     max-width: 100vw;
     min-height: 50vh;
     overflow: scroll;
-    height: 50vh;
-    padding-top: 20px;
+    height: 80vh;
+    padding-top: 60px;
     padding-bottom: 20px;
   }
   .content h1 {
@@ -235,7 +238,7 @@ select option {
   }
   div.footer {
     position: absolute;
-    top: 90vh;
+    top: 80vh;
     min-width: 100vw;
     max-width: 100vw;
   }
