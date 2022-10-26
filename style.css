@@ -23,7 +23,7 @@ p span {
   font-family: 'Zilla Slab Highlight'
 }
 p a {
-  color: #47885e;
+  color: #40514e;
 }
 .main {
   display: flex;
@@ -31,7 +31,7 @@ p a {
   min-width: 100vw;
 }
 .photo {
-  background-color: #47885e;
+  background-color: #40514e;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -55,7 +55,7 @@ p a {
   padding-left: 5vw;
   min-height: 100vh;
   max-height: 100vh;
-  color: #47885e;
+  color: #40514e;
   min-width: 50vw;
   max-width: 50vw;
   overflow: hidden;
@@ -91,21 +91,21 @@ p a {
 hr.line {
   margin-top: 10px;
   margin-bottom: 10px;
-  border-top: 3px solid #47885e;
+  border-top: 3px solid #40514e;
 }
 hr.line-short {
   margin-top: 10px;
   margin-bottom: 10px;
-  border-top: 5px solid #47885e;
+  border-top: 5px solid #40514e;
   width: 100px;
 }
 a.title {
   text-decoration: none;
-  color: #47885e;
+  color: #40514e;
 }
 a.links {
   text-decoration: none;
-  color: #47885e;
+  color: #40514e;
   display: block;
   padding: 5px;
 }
@@ -128,10 +128,10 @@ div.footer ul li {
   padding: 0;
   margin: 5px;
   margin-left: 0px;
-  border: 1px solid #47885e;
+  border: 1px solid #40514e;
 }
 div.footer ul li:hover {
-  background-color: #47885e;
+  background-color: #40514e;
 }
 div.footer ul li:hover a {
   color: #f5f5f5;
@@ -155,17 +155,17 @@ div.header ul li {
   margin: 5px;
   margin-bottom: 0px;
   margin-left: 0px;
-  border-top: 2px solid #47885e;
+  border-top: 2px solid #40514e;
 
 }
 div.header ul li:hover {
-  background-color: #47885e;
+  background-color: #40514e;
   color: #f5f5f5;
-  border-bottom: 2px solid #47885e;
+  border-bottom: 2px solid #40514e;
 }
 div.header ul li a {
   text-decoration: none;
-  color: #47885e;
+  color: #40514e;
 }
 div.header ul li:hover a {
   color: #f5f5f5;
@@ -175,7 +175,7 @@ select {
   font-size: 20pt;
   padding: 2px;
   color: #f5f5f5;
-  background-color: #47885e;
+  background-color: #40514e;
   border-radius: 0;
   border: 4px solid #f5f5f5;
   text-align-last: center;
@@ -185,7 +185,7 @@ select:focus {
 }
 select option {
   text-align: center;
-  background-color: #47885e;
+  background-color: #40514e;
   color: #f5f5f5;
   text-align-last: center;
 }
@@ -202,7 +202,7 @@ select option {
     min-height: 50vh;
     max-height: 50vh;
     margin-top: 10%;
-    background-color: #47885e;
+    background-color: #40514e;
   }
   .photo h5 {
     font-size: 25px;
@@ -259,7 +259,7 @@ select option {
     margin: 5px;
     margin-bottom: 10px;
     margin-left: 0px;
-    border: 1px solid #47885e;
+    border: 1px solid #40514e;
   }
   div.header {
     position: absolute;
