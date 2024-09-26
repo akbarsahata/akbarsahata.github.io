@@ -1,114 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <title>Akbar Sahata's Profile</title>
-      <meta charset="UTF-8" />
-      <meta name="google-site-verification" content="RJ0ilwwP0XcTe-BgyWFbRwhHxXuZdr3h7ETJfbP31WE" />
-      <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-      <meta name="description" content="Akbar Sahata's Profile - software engineer from Indonesia" />
-      <meta name="theme-color" content="#f5f5f5" />
-      <meta property="og:url" content="https://akbarsahata.id" />
-      <meta property="og:type" content="website" />
-      <meta property="og:title" content="Akbar Sahata" />
-      <meta property="og:description" content="Akbar Sahata's Profile - software engineer from Indonesia" />
-      <meta property="og:image" content="https://akbarsahata.id/background-profile.jpeg" />
-      <meta property="fb:app_id" content="397605777484093" />
-      <link href="style.css" rel="stylesheet" type="text/css" />
-      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-      <link rel="icon" href="/favicon.ico" type="image/x-icon" /> 
-      <link rel="manifest" href="/manifest.json" />
-      <noscript>
-        Either your browser deactivate JavaScript or does not support it!
-      </noscript> 
-    </head>
-    <body>
-      <div class="main">
-        <div class="content" id="app">
-          
-        </div>
-        <div class="photo">
-          <h5 id="views"></h5>
-        </div>
-        <div class="header">
-          <ul>
-            <li>
-              <a class="links" href="#">Home</a>
-            </li>
-            <li>
-              <a class="links" href="#profile">Profile</a>
-            </li>
-            <li>
-                <a class="links" href="#projects">Projects</a>
-              </li>
-          </ul>
-          <select id="pages">
-            <option value="#">Home</option>
-            <option value="#profile">Profile</option>
-            <option value="#projects">Projects</option>
-          </select>
-        </div>
-        <div class="footer">
-          <ul>
-            <li>
-              <a 
-                href="https://github.com/akbarsahata"
-                target="_blank" 
-                class="links"
-                onclick="FB.AppEvents.logEvent('CLICKED_GITHUB')" >
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/akbarsahata"
-                target="_blank"
-                class="links"
-                onclick="FB.AppEvents.logEvent('CLICKED_LINKEDIN')">
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://blog.akbarsahata.id"
-                target="_blank"
-                class="links"
-                onclick="FB.AppEvents.logEvent('CLICKED_BLOG')">
-                Blog
-              </a>
-            </li>
-            <li class="less-priority">
-              <a
-                href="https://twitter.com/enjiner_koding"
-                target="_blank"
-                class="links"
-                onclick="FB.AppEvents.logEvent('CLICKED_TWITTER')">
-                Twitter
-              </a>
-            </li>
-            <li class="less-priority">
-              <a
-                href="https://www.instagram.com/akbarsahata/"
-                target="_blank"
-                class="links"
-                onclick="FB.AppEvents.logEvent('CLICKED_INSTAGRAM')">
-                Instagram
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </body>
-    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-database.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145297696-1"></script>
+  <head>
+    <!-- Google Tag Manager -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-145297696-1');
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TW6692KD");
     </script>
-    <script src="script.min.js"></script>
-    <script src="spa.min.js"></script>
+    <!-- End Google Tag Manager -->
+    <title>Akbar Sahata's Profile</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="google-site-verification"
+      content="RJ0ilwwP0XcTe-BgyWFbRwhHxXuZdr3h7ETJfbP31WE"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Akbar Sahata's Profile - software engineer from Indonesia"
+    />
+    <meta name="theme-color" content="#f5f5f5" />
+    <meta property="og:url" content="https://akbarsahata.id" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Akbar Sahata" />
+    <meta
+      property="og:description"
+      content="Akbar Sahata's Profile - software engineer from Indonesia"
+    />
+    <meta
+      property="og:image"
+      content="https://akbarsahata.id/background-profile.jpeg"
+    />
+    <meta property="fb:app_id" content="397605777484093" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="/manifest.json" />
+    <noscript>
+      Either your browser deactivate JavaScript or does not support it!
+    </noscript>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TW6692KD"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="main">
+      <div class="content" id="app"></div>
+      <div class="photo">
+        <h5 id="views"></h5>
+      </div>
+      <div class="header">
+        <ul>
+          <li>
+            <a class="links" href="#">Home</a>
+          </li>
+          <li>
+            <a class="links" href="#profile">Profile</a>
+          </li>
+          <li>
+            <a class="links" href="#projects">Projects</a>
+          </li>
+        </ul>
+        <select id="pages">
+          <option value="#">Home</option>
+          <option value="#profile">Profile</option>
+          <option value="#projects">Projects</option>
+        </select>
+      </div>
+      <div class="footer">
+        <ul>
+          <li>
+            <a
+              href="https://github.com/akbarsahata"
+              target="_blank"
+              class="links"
+            >
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/akbarsahata"
+              target="_blank"
+              class="links"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://copasan-chatgpt.akbarsahata.id"
+              target="_blank"
+              class="links"
+            >
+              Blog
+            </a>
+          </li>
+          <li class="less-priority">
+            <a
+              href="https://twitter.com/enjiner_koding"
+              target="_blank"
+              class="links"
+            >
+              Twitter
+            </a>
+          </li>
+          <li class="less-priority">
+            <a
+              href="https://www.instagram.com/akbarsahata/"
+              target="_blank"
+              class="links"
+            >
+              Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <script src="spa.js"></script>
 </html>
