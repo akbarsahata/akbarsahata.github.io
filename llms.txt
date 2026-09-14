@@ -1,0 +1,24 @@
+# Akbar Sahata
+
+> Akbar Sahata is a software engineer from Indonesia. Since 2016 he has built backend systems with local and international tech startups, and he is currently a Tech Lead at a multinational enterprise. His work focuses on Node.js and Go, software architecture, cloud infrastructure, and engineering leadership.
+
+## Pages
+
+- [Home](https://akbarsahata.id/): Summary, current role, and social profiles.
+- [Profile](https://akbarsahata.id/profile/): About, experience, skills, and education.
+- [Projects](https://akbarsahata.id/projects/): Selected software projects.
+- [Publications](https://akbarsahata.id/publications/): Peer-reviewed publications on REST API security and PII detection.
+
+## Profiles
+
+- [GitHub](https://github.com/akbarsahata)
+- [LinkedIn](https://www.linkedin.com/in/akbarsahata)
+- [Blog](https://blog.akbarsahata.id)
+- [Instagram](https://www.instagram.com/akbarsahata/)
+
+## Publications
+
+- Improving REST API Security and Software Integrity through Automated PII Detection Tool Using Machine Learning Techniques — ICoCSETI 2025: https://ieeexplore.ieee.org/abstract/document/11020385
+- Advancing Data Privacy in REST APIs: A Comparative Study of Machine Learning Techniques for PII Detection — SIML 2025: https://ieeexplore.ieee.org/abstract/document/11081062
+
+Companion implementation: https://github.com/akbarsahata/dashboard-machine-learning-pii-detection
