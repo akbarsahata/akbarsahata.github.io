@@ -7,7 +7,7 @@
 - [Home](https://akbarsahata.id/): Summary, current role, and social profiles.
 - [Profile](https://akbarsahata.id/profile/): About, experience, skills, and education.
 - [Projects](https://akbarsahata.id/projects/): Selected software projects.
-- [Publications](https://akbarsahata.id/publications/): Peer-reviewed publications on REST API security and PII detection.
+- [Publications](https://akbarsahata.id/publications/): Peer-reviewed publications on REST API security, PII detection, and cloud service benchmarking.
 
 ## Profiles
 
@@ -18,6 +18,7 @@
 
 ## Publications
 
+- An Empirical Comparison of AWS Lambda and Amazon EC2 for a Real-Time Text Classification and PII Detection Service — The 5th International Conference on Electrical and Information Technology, October 2026: https://www.researchgate.net/publication/415545775_An_Empirical_Comparison_of_AWS_Lambda_and_Amazon_EC2_for_a_Real-Time_Text_Classification_and_PII_Detection_Service
 - Improving REST API Security and Software Integrity through Automated PII Detection Tool Using Machine Learning Techniques — ICoCSETI 2025: https://ieeexplore.ieee.org/abstract/document/11020385
 - Advancing Data Privacy in REST APIs: A Comparative Study of Machine Learning Techniques for PII Detection — SIML 2025: https://ieeexplore.ieee.org/abstract/document/11081062
 
